@@ -1,10 +1,10 @@
 <?php
 
-use Wruczek\PhpFileCache\PhpFileCache;
+use flight\Cache;
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
-$cache = new PhpFileCache(__DIR__ . "/../testcache/"); // initialise with different cache folder
+$cache = new Cache(__DIR__ . "/../testcache/"); // initialise with different cache folder
 
 // first key, then refresh callback and cache time for last
 // see documentation of the refreshIfExpired function for more

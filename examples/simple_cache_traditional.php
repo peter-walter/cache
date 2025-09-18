@@ -1,10 +1,10 @@
 <?php
 
-use Wruczek\PhpFileCache\PhpFileCache;
+use flight\Cache;
 
 require_once __DIR__ . "/../vendor/autoload.php";
 
-$cache = new PhpFileCache(__DIR__ . "/../testcache/");
+$cache = new Cache(__DIR__ . "/../testcache/");
 
 // Traditional procedure, without using the refreshIfExpired shortcut.
 if ($cache->isExpired("simple-cache-test")) {
